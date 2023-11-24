@@ -1,5 +1,5 @@
 {
-    "name": "ESP32 RS485 Supreme",
+    "name": "ESP32 BLE to LRAWAN",
     "version": "1.1023",
     "builds": [
         {
