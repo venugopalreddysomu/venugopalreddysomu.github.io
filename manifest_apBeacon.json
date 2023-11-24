@@ -1,0 +1,27 @@
+{
+    "name": "ESP32 RS485 Supreme",
+    "version": "1.1023",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "firmware/apBeaconToLorawan/bootloader_qio_80m.bin",
+                    "offset": 4096
+                },
+                {
+                    "path": "firmware/apBeaconToLorawan/boot_app0.bin",
+                    "offset": 57344
+                },
+                {
+                    "path": "firmware/apBeaconToLorawan/ScanBeacon_sendLorawan_5mins_noRSSILim.bin",
+                    "offset": 65536
+                },
+                {
+                    "path": "firmware/apBeaconToLorawan/ScanBeacon_sendLorawan.ino.partitions.bin",
+                    "offset": 32768
+                }
+            ]
+        }
+    ]
+}
