@@ -76,9 +76,24 @@
       }
     </style>
     <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
+	
+	<script>
+        function checkPassword() {
+            var password = 'bridgethings';  // Replace 'yourpassword' with your actual password
+            var userPassword = prompt('Please enter the password to view this page:', '');
+            
+            if (userPassword === password) {
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password');
+                window.location = 'error.html'; // Redirect to another page or show an error message
+            }
+        }
+    </script>
+	
   </head>
-  <body>
-    <div class="content">
+  <body onload="checkPassword()>
+    <div class="content" style="display:none;>
       <h1>BridgeThings-ESP32 installer</h1>
       <p>Select The product</p>
       <ul class="radios">
