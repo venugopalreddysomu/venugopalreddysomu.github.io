@@ -83,7 +83,7 @@
             var userPassword = prompt('Please enter the password to view this page:', '');
             
             if (userPassword === password) {
-                document.getElementById('content').style.display = 'block';
+                document.getElementById('protected-content').style.display = 'block';
             } else {
                 alert('Incorrect password');
                 window.location = 'error.html'; // Redirect to another page or show an error message
@@ -91,9 +91,10 @@
         }
     </script>
 	
+	
   </head>
   <body onload="checkPassword()">
-    <div class="content" style="display:none;">
+    <div id="protected-content" class="content" style="display:none;">
       <h1>BridgeThings-ESP32 installer</h1>
       <p>Select The product</p>
       <ul class="radios">
